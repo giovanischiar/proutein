@@ -1,7 +1,8 @@
 package io.schiar.proutein.view
 
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class FoodsViewModel : ViewModel() {
-    // TODO: Implement the ViewModel
+    val helloWorld = MutableLiveData("Hello World!")
 }
