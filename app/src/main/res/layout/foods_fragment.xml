@@ -6,7 +6,8 @@
   >
 
   <data>
-    <variable name="viewModel" type="io.schiar.proutein.view.FoodsViewModel" />
+    <variable name="viewModel" type="io.schiar.proutein.viewmodel.FoodsViewModel" />
+    <variable name="adapter" type="io.schiar.proutein.view.FoodListAdapter" />
   </data>
 
   <androidx.constraintlayout.widget.ConstraintLayout
@@ -15,15 +16,12 @@
     android:layout_height="match_parent"
     tools:context=".view.FoodsFragment">
 
-    <TextView
-      android:id="@+id/message"
-      android:layout_width="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:text="@{viewModel.helloWorld}"
-      app:layout_constraintBottom_toBottomOf="parent"
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+      app:adapter="@{adapter}"
+      app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+      tools:ignore="MissingConstraints" />
 
   </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
