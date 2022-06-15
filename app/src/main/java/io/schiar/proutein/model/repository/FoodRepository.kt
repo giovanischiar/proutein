@@ -3,8 +3,11 @@ package io.schiar.proutein.model.repository
 import android.os.Handler
 import android.os.Looper
 import io.schiar.proutein.BuildConfig
+import io.schiar.proutein.model.Energy
 import io.schiar.proutein.model.Food
+import io.schiar.proutein.model.Serving
 import org.json.JSONObject
+import toMap
 import java.net.URL
 import kotlin.concurrent.thread
 
@@ -25,8 +28,8 @@ class FoodRepository: FoodRepositoryInterface {
             val foods = values?.subList(1, values.size)?.map {
                 Food(
                     it[0],
-                    it[1].replace(',', '.').toDouble(),
-                    it[3].replace(',', '.').toDouble(),
+                    Serving(it[1].replace(',', '.').toDouble(), "g"),
+                    Energy(it[3].replace(',', '.').toDouble(), "kcal"),
                     it[2].replace(',', '.').toDouble()
                 )
             }

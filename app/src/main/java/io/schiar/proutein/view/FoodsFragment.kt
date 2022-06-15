@@ -6,9 +6,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.Observer
-import io.schiar.proutein.R
 import io.schiar.proutein.databinding.FoodsFragmentBinding
 import io.schiar.proutein.viewmodel.FoodsViewModel
 
