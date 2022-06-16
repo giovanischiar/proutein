@@ -1,7 +1,6 @@
 package io.schiar.proutein.view
 
 import android.view.LayoutInflater
-import android.view.View.inflate
 import android.widget.TextView
 import androidx.appcompat.widget.LinearLayoutCompat
 import androidx.databinding.BindingAdapter

@@ -15,6 +15,14 @@ class FoodsViewModel(
         MutableLiveData<List<FoodViewData>>()
     }
 
+    val food: MutableLiveData<FoodViewData> by lazy {
+        MutableLiveData<FoodViewData>()
+    }
+
+    fun foodAt(index: Int) {
+        food.postValue(foods.value?.get(index) ?: return)
+    }
+
     fun fetch() {
         foodsRepository.fetch {
             foods.postValue(it.map { food ->

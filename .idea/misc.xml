@@ -3,9 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/food_item_shape.xml" value="0.1185" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.2085" />
         <entry key="app/src/main/res/layout/food_adapter.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/foods_fragment.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/food_fragment.xml" value="0.24818840579710144" />
+        <entry key="app/src/main/res/layout/foods_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_food.xml" value="0.24818840579710144" />
         <entry key="app/src/main/res/layout/main_activity.xml" value="0.19610507246376813" />
         <entry key="app/src/main/res/layout/unity_view.xml" value="0.1" />
       </map>
